@@ -16,6 +16,7 @@ const app = express();
 // middleware
 app.use(cors());
 app.use(morgan('dev'))
+app.use(express.json())
 
 // routing
 // app.use('/api/stories', story_router);
